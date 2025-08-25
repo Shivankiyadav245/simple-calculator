@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator - Shivanki Yadav</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Calculator</h1>
+      <p class="by">by <strong>Shivanki Yadav</strong></p>
+    </header>
+
+    <main class="app">
+      <section class="calc">
+        <div class="display">
+          <div id="history" class="history"></div>
+          <input id="screen" class="screen" type="text" inputmode="numeric" placeholder="0" />
+        </div>
+        <div class="keys">
+          <button data-act="ac" class="alt">AC</button>
+          <button data-act="del" class="alt">DEL</button>
+          <button data-val="%" class="alt">%</button>
+          <button data-val="/" class="op">÷</button>
+
+          <button data-val="7">7</button>
+          <button data-val="8">8</button>
+          <button data-val="9">9</button>
+          <button data-val="*" class="op">×</button>
+
+          <button data-val="4">4</button>
+          <button data-val="5">5</button>
+          <button data-val="6">6</button>
+          <button data-val="-" class="op">−</button>
+
+          <button data-val="1">1</button>
+          <button data-val="2">2</button>
+          <button data-val="3">3</button>
+          <button data-val="+" class="op">+</button>
+
+          <button data-val="(" class="alt">(</button>
+          <button data-val="0">0</button>
+          <button data-val="." class="alt">.</button>
+          <button data-act="eq" class="eq">=</button>
+        </div>
+      </section>
+
+      <aside class="side">
+        <h3>History</h3>
+        <ul id="list" class="list"></ul>
+        <button id="clearHist" class="clear">Clear History</button>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
